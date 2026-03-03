@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "difplot"
+name = "avc"
 version = "0.1.0"
-description = "Difplot utilities"
+description = "Plasma Physics utilities"
 authors = [{name = "Jacob Gunn"}]
