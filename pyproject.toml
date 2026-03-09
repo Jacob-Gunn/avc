@@ -7,3 +7,6 @@ name = "avc"
 version = "0.1.0"
 description = "Plasma Physics utilities"
 authors = [{name = "Jacob Gunn"}]
+
+[tool.setuptools.packages.find]
+where = ["."]
