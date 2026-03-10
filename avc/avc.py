@@ -21,6 +21,9 @@ kbsi = 1.36e-23                                                                #
 Td = 1e-17                                                                     #1Td in Vcm^2
 me = 9e-31                                                                     #Electron mass [kg]
 
+G0 = [0.007, 0.07, 0.18, 0.33,0.52,0.72,
+      0.92,1.2,1.4,1.6,1.8,2.1,2.3,2.5,2.6] * 1e-3                             #Total decay widths of O_2^- autoionisation states starting from v = 4, in eV
+
 
 def N0(T,p):
     '''Returns the number density of an ideal gas with temperature T and pressure p
@@ -467,3 +470,4 @@ def fit(x, y, func, p0=[], bounds=[], acc=100):
     return np.asarray(best_theta, dtype=float)
 
     
+
