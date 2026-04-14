@@ -20,6 +20,7 @@ kb = 8.617e-5                                                                  #
 kbsi = 1.36e-23                                                                #Boltzmann constant [J/K]
 Td = 1e-17                                                                     #1Td in Vcm^2
 me = 9e-31                                                                     #Electron mass [kg]
+eps0 = 8.85e-12                                                                #Permittivity of free space [F/m]
 
 G0 = [0.007, 0.07, 0.18, 0.33,0.52,0.72,
       0.92,1.2,1.4,1.6,1.8,2.1,2.3,2.5,2.6] * 1e-3                             #Total decay widths of O_2^- autoionisation states starting from v = 4, in eV
