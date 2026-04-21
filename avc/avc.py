@@ -32,7 +32,7 @@ def N0(T,p,unit = 'm'):
     [p] = atm'''
     if unit == 'm':
           pref = 2.48e25 #m^3
-    if unit == 'cm':
+    elif unit == 'cm':
           pref = 2.48e25 * 1e-6 #cm^-3
     else:
           print('Unrecognised units. Use cm or m')
