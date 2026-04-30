@@ -85,7 +85,7 @@ def sigBW(e, Gamma0, Gamma, eps_k):
     denom = (e - eps_k)**2 + (Gamma / 2.0)**2
     
 
-    return p1 * prefactor * (Gamma0 * Gamma) / denom
+    return prefactor * (Gamma0 * Gamma) / denom
 
 
 
