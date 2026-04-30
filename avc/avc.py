@@ -75,7 +75,7 @@ def sigBW(e, Gamma0, Gamma, eps_k):
     
     Gamma0, Gamma, eps_j, and e are all in units of electron volts
     gs is array-like, length 3, [g_i, g_j, g_k]
-    p1 is a numerical fudge factor for fitting magnitude'''
+    returns in m^2'''
     gs = [2.0, 3.0, 4.0]
     g_i, g_j, g_k = iter(gs) #Statistical weights of ion, electron
 
@@ -84,7 +84,6 @@ def sigBW(e, Gamma0, Gamma, eps_k):
     prefactor = np.pi * lam**2 * (g_k / (g_i * g_j))
     denom = (e - eps_k)**2 + (Gamma / 2.0)**2
     
-    p1 = 3e-6 
 
     return p1 * prefactor * (Gamma0 * Gamma) / denom
 
