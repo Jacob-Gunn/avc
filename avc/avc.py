@@ -80,7 +80,7 @@ def sigBW(e, Gamma0, Gamma, eps_k):
     g_i, g_j, g_k = iter(gs) #Statistical weights of ion, electron
 
 
-    lam = h / np.sqrt(2 * me * e * q)
+    lam = hbar / np.sqrt(2 * me * e * q)
     prefactor = np.pi * lam**2 * (g_k / (g_i * g_j))
     denom = (e - eps_k)**2 + (Gamma / 2.0)**2
     
