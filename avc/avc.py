@@ -25,6 +25,10 @@ eps0 = 8.85e-12                                                                #
 G0 = np.array([0.007, 0.07, 0.18, 0.33,0.52,0.72,
       0.92,1.2,1.4,1.6,1.8,2.1,2.3,2.5,2.6]) * 1e-3                             #Total decay widths of O_2^- autoionisation states starting from v = 4, in eV
 
+Nv = [0,0.288, 0.573, 0.855, 1.133, 1.408, 1.679, 1.947, 2.211, 2.471, 2.728]
+
+Ov = [0.000, 0.196, 0.388, 0.573, 0.756, 0.937, 1.117, 1.291, 1.461, 1.629, 1.796]
+
 
 def N0(T,p,unit = 'm'):
     '''Returns the number density of an ideal gas with temperature T and pressure p
